@@ -20,3 +20,16 @@ export default defineConfig([
     },
   },
 ])
+
+
+module.exports = {
+  rules: {
+    "react-refresh/only-export-components": [
+      "warn",
+      {
+        allowConstantExport: true,
+        extraHOCs: ["myHocComponent"],
+      },
+    ],
+  },
+};   

@@ -43,7 +43,7 @@ async function register({
 
   const hashedPassword = await bcrypt.hash(password, 10);
 
-  const { rawToken, hashToken : verificationToken } = gerateResetToken(); // if you dont have the reset password flow then you can remove this
+  const { rawToken, hashToken : verificationToken } = gerateResetToken(); // if i dont have the reset password flow then i can remove this
 
   const [user] = await db
     .insert(userTable)
