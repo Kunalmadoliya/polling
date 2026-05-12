@@ -27,8 +27,7 @@ module.exports = {
     "react-refresh/only-export-components": [
       "warn",
       {
-        allowConstantExport: true,
-        extraHOCs: ["myHocComponent"],
+        allowExportNames: ["loader", "action", "meta", "links"],
       },
     ],
   },
